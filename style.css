@@ -5,7 +5,6 @@
     box-sizing: border-box;
     overflow-x: hidden;
     font-family: 'Dosis', sans-serif;
-    transition: .3s;
 }
 
 :root

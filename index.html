@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
 </head>
-<body onload="change()" onscroll="hideNav()">
+<body onscroll="hideNav()">
     <!-- Home  -->
 
     <div id="overlayMenu">
@@ -25,9 +25,9 @@
         <ul id="oItems">
             <li><a href="#menuSec">Menu</a></li>
             <li><a href="#reviewSec">Reviews</a></li>
-            <li><a href="#">Order</a></li>
             <li><a href="#contactSec">Contact</a></li>
         </ul>
+        <div id="par"><a href="#" id="if">Order Now</a></div>   
     </div>
 
     <a href="#landPg" id="topBtn"><i class="fa-solid fa-arrow-up"></i></a>
@@ -37,12 +37,12 @@
         <header class='nav'>
             <a href="#landPg"><img src="Images/Logo.png" alt=""></a>
             <ul id='items'>
-              <li><a href="#menuSec">Menu</a></li>
-              <li><a href="#reviewSec">Reviews</a></li>
-              <li><a href="#">Order</a></li>
-              <li><a href="#contactSec">Contact</a></li>
-              <li id="more" onclick="disNav()"><i class="fa-solid fa-bars"></i></li>
+                <li><a href="#menuSec">Menu</a></li>
+                <li><a href="#reviewSec">Reviews</a></li>
+                <li><a href="#contactSec">Contact</a></li>
+                <li id="more" onclick="disNav()"><i class="fa-solid fa-bars"></i></li>   
             </ul>
+            <a href="#" id="ii">Order Now</a>
         </header>
         
         <div id="content">
@@ -83,7 +83,23 @@
     </section>
 
     <section id="contactSec">
-        <h3 id="secTitle">Contact <span id="h">U</span>s</h3>
+        <h3 id="secTitle"><span id="h">C</span>ontact</h3>
+        <div id="maps">
+            <h2>Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6512000.049257748!2d-124.59765488908594!3d37.160128917367196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2sCalifornia%2C%20USA!5e0!3m2!1sen!2sin!4v1683753655497!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+        <div id="hrs">
+            <h2>Hours</h2>
+            <p>Monday - Friday : 9am to 8pm</p>
+            <p>Sunday: 8am to 8pm</p>
+        </div>
+
+        <div id="contacts">
+            <h2 id="adr">Phone: <a id="b" href="">+9194*****659</a></h2>
+            <h2 id="adr">Address: <a id="b" href="">4389 Doe Meadow Drive, Bethesda</a></h2>
+        </div>
     </section>
 
 
