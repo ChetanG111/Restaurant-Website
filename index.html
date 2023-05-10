@@ -6,8 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menuSec.css">
+    <link rel="shortcut icon" href="Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="navbar.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
 </head>
-<body>
-    
+<body onload="change()" onscroll="hideNav()">
+    <!-- Home  -->
+
+    <div id="overlayMenu">
+        <i class="fa-solid fa-xmark" onclick="hideNav()"></i>
+        <ul id="oItems">
+            <li><a href="#menuSec">Menu</a></li>
+            <li><a href="#reviewSec">Reviews</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Home Sec -->
+    <section id="landPg">
+        <header class='nav'>
+            <a href="#landPg">Logo</a>
+            <ul id='items'>
+              <li><a href="#menuSec">Menu</a></li>
+              <li><a href="#reviewSec">Reviews</a></li>
+              <li><a href="#">Contact</a></li>
+              <li id="more" onclick="disNav()"><i class="fa-solid fa-bars"></i></li>
+            </ul>
+        </header>
+        
+        <div id="content">
+            <div id="txt">
+                <h2 id="contentHead">Chicken Burger</h2>
+                <h3 id="contentTxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut tortor nulla. Pellentesque eget rutrum.</h3>
+                <a id="cta" href="#menuSec">Our Menu</a>
+            </div>
+            <div>
+                <img src="Burger.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="menuSec">
+        <h3 id="secTitle">Our <span id="h">M</span>enu</h3>
+        <div id="container">
+            <div id="item"><img src="pizza.jpg" alt="Pizza"><h2>Non-Veg Pizza</h2></div>
+            <div id="item"><img src="Burger.png" alt="Pizza"><h2>Chicken Burger</h2></div>
+            <div id="item"><img src="Pizza.png" alt="Pizza"><h2>Veg Pizza</h2></div>
+            <div id="item"><img src="Shawarma Plate.png" alt="Pizza"><h2>Shawarma</h2></div>
+        </div>
+    </section>
+
+    <section id="reviewSec">
+        <h3 id="secTitle"><span id="h">R</span>eviews</h3>
+    </section>
+
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/f274d35c25.js" crossorigin="anonymous"></script>
 </body>
 </html>

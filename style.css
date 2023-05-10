@@ -1,0 +1,139 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Dosis', sans-serif;
+    transition: .3s;
+}
+
+:root
+{
+    /* Spicy Red */
+    --mainCol: #FF4500; 
+    /* Golden Yellow */
+    --hoverCol: #FFD966;
+}
+
+html
+{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+#secTitle
+{
+  text-align: center;
+  font-family: 'Raleway', sans-serif;font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+#secTitle > #h
+{
+  color: var(--mainCol);
+  font-size: 2.7rem;
+  font-family: inherit;
+  font-weight: 900;
+}
+
+#content
+{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 0rem;
+}
+
+#txt
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 3rem 0 1rem;
+    gap: 1rem;
+}
+
+#cta
+{
+  width: 10rem;
+  height: 2.5rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: rgb(224, 224, 224);
+  border: none;
+  border-radius: 4px;
+  background-color: var(--mainCol);
+  text-decoration: none;
+  transition: .3s;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#cta:hover
+{
+  letter-spacing: 1.5px;
+}
+
+
+#content h2
+{
+  font-size: 4rem;
+  color: var(--mainCol);
+}
+
+#content h3
+{
+  font-size: 1.5rem;
+}
+
+
+
+#reviewSec
+{
+  padding: 6rem 1rem 2rem;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Media query for mobile width */
+@media screen and (max-width: 768px) {
+  #content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    place-items: center;
+    text-align: center;
+    position: relative;
+  }
+
+  #txt
+  {
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  #content h2
+  {
+    font-size: 2.3rem;
+  }
+
+  #content h3
+  {
+    font-size: 1.1rem;
+  }
+
+  #content img
+  {
+    height: 16rem;
+    width: auto;
+  }
+}
