@@ -7,8 +7,10 @@
     <title>Restaurant Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="menuSec.css">
-    <link rel="shortcut icon" href="Logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Images/Logo.png" type="image/x-icon">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="reviewSec.css">
+    <link rel="stylesheet" href="contactSec.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,46 +25,65 @@
         <ul id="oItems">
             <li><a href="#menuSec">Menu</a></li>
             <li><a href="#reviewSec">Reviews</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">Order</a></li>
+            <li><a href="#contactSec">Contact</a></li>
         </ul>
     </div>
+
+    <a href="#landPg" id="topBtn"><i class="fa-solid fa-arrow-up"></i></a>
 
     <!-- Home Sec -->
     <section id="landPg">
         <header class='nav'>
-            <a href="#landPg">Logo</a>
+            <a href="#landPg"><img src="Images/Logo.png" alt=""></a>
             <ul id='items'>
               <li><a href="#menuSec">Menu</a></li>
               <li><a href="#reviewSec">Reviews</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#">Order</a></li>
+              <li><a href="#contactSec">Contact</a></li>
               <li id="more" onclick="disNav()"><i class="fa-solid fa-bars"></i></li>
             </ul>
         </header>
         
         <div id="content">
             <div id="txt">
-                <h2 id="contentHead">Chicken Burger</h2>
-                <h3 id="contentTxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut tortor nulla. Pellentesque eget rutrum.</h3>
+                <h2 id="contentHead">Our Special</h2>
+                <h3 id="contentTxt">Chicken Burger</h3>
                 <a id="cta" href="#menuSec">Our Menu</a>
             </div>
-            <div>
-                <img src="Burger.png" alt="">
+            <div id="imgBox">
+                <img src="Images/Burger.png" alt="" id="specialImg">
             </div>
         </div>
     </section>
 
     <section id="menuSec">
-        <h3 id="secTitle">Our <span id="h">M</span>enu</h3>
+        <h3 id="secTitle">Our <span id="h">D</span>elicious Menu</h3>
         <div id="container">
-            <div id="item"><img src="pizza.jpg" alt="Pizza"><h2>Non-Veg Pizza</h2></div>
-            <div id="item"><img src="Burger.png" alt="Pizza"><h2>Chicken Burger</h2></div>
-            <div id="item"><img src="Pizza.png" alt="Pizza"><h2>Veg Pizza</h2></div>
-            <div id="item"><img src="Shawarma Plate.png" alt="Pizza"><h2>Shawarma</h2></div>
+            <div id="item"><img src="Images/menu-1.png" alt="Pizza"><h2>Greek Salad</h2><h3>$4</h3></div>
+            <div id="item"><img src="Images/menu-2.png" alt="Pizza"><h2>Lasagne</h2><h3>$10</h3></div>
+            <div id="item"><img src="Images/menu-3.png" alt="Pizza"><h2>Butternut Pumpkin</h2><h3>$14</h3></div>
+            <div id="item"><img src="Images/menu-4.png" alt="Pizza"><h2>Tokusen Wagyu</h2><h3>$40</h3></div>
+            <div id="item"><img src="Images/menu-5.png" alt="Pizza"><h2>Olivas Reilenas</h2><h3>$16</h3></div>
         </div>
+
+        <a id="menuCta" href="#">Full Menu</a>
     </section>
 
     <section id="reviewSec">
         <h3 id="secTitle"><span id="h">R</span>eviews</h3>
+        <h2>They Said About Us</h2>
+
+        <div id="rContainer">
+            <div id="rview"><img src="Images/testi1.jpg" alt=""><h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim mi in lectus aliquam dictum. Maecenas accumsan enim erat, non maximus magna sagittis non. Nullam.</h4></div>
+            <div id="rview"><img src="Images/testi2.jpg" alt=""><h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim mi in lectus aliquam dictum. Maecenas accumsan enim erat, non maximus magna sagittis non. Nullam.</h4></div>
+            <div id="rview"><img src="Images/testi3.jpg" alt=""><h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim mi in lectus aliquam dictum. Maecenas accumsan enim erat, non maximus magna sagittis non. Nullam.</h4></div>
+
+        </div>
+    </section>
+
+    <section id="contactSec">
+        <h3 id="secTitle">Contact <span id="h">U</span>s</h3>
     </section>
 
 

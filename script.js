@@ -1,13 +1,16 @@
 const header = document.getElementsByClassName('nav');
+const topBtn = document.getElementById('topBtn')
 
 window.addEventListener('scroll', function(){
     if(this.window.scrollY > 0)
     {
         header[0].classList.add('sticky')
+        topBtn.style.opacity = 1;
     }
     else
     {
         header[0].classList.remove('sticky')
+        topBtn.style.opacity = 0;
     }
 })
 

@@ -16,6 +16,11 @@
     --hoverCol: #FFD966;
 }
 
+body
+{
+  height: auto;
+}
+
 html
 {
     overflow-x: hidden;
@@ -50,6 +55,16 @@ html
     gap: 0rem;
 }
 
+#specialImg
+{
+  animation: specialAnim 1s infinite;
+}
+
+#imgBox
+{
+  overflow: hidden;
+}
+
 #txt
 {
     width: 100%;
@@ -57,8 +72,7 @@ html
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 0 3rem 0 1rem;
-    gap: 1rem;
+    padding: 0 3rem 0 2rem;
 }
 
 #cta
@@ -77,6 +91,7 @@ html
   align-items: center;
   justify-content: center;
   display: flex;
+  margin-top: 1rem;
 }
 
 #cta:hover
@@ -87,23 +102,16 @@ html
 
 #content h2
 {
-  font-size: 4rem;
-  color: var(--mainCol);
+  font-size: 1.5rem;
+  color: #666666;
 }
 
 #content h3
 {
-  font-size: 1.5rem;
+  font-size: 4rem;
+  color: var(--mainCol);
 }
 
-
-
-#reviewSec
-{
-  padding: 6rem 1rem 2rem;
-  height: 100vh;
-  width: 100%;
-}
 
 /* Media query for mobile width */
 @media screen and (max-width: 768px) {
@@ -123,17 +131,36 @@ html
 
   #content h2
   {
-    font-size: 2.3rem;
+    font-size: 1.1rem;
   }
 
   #content h3
   {
-    font-size: 1.1rem;
+    font-size: 2.3rem;
   }
 
   #content img
   {
-    height: 16rem;
+    height: 18rem;
     width: auto;
+    margin-bottom: 2rem;
   }
+
+  #imgBox
+  {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+@keyframes specialAnim {
+    0%,100%
+    {
+      transform: translateY(0%);
+    }
+
+    50%
+    {
+      transform: translateY(2.5%);
+    }
 }

@@ -61,6 +61,12 @@
   font-size: 1.8rem;
 }
 
+.nav > a > img
+{
+  height: 2.5rem;
+  width: auto;
+}
+
 #overlayMenu {
     width: 90%;
     height: 90%;
@@ -99,6 +105,8 @@
     text-decoration: none;
     color: black;
     font-family: "Open Sans", sans-serif;
+    width: 100%;
+    padding-right: 10rem;
 }
 
 #oItems li a:hover
@@ -128,4 +136,27 @@
         display: none;
     }
 
+}
+
+#topBtn
+{
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: var(--mainCol);
+  font-size: 1rem;
+  color: white;
+  padding: .7rem .9rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  opacity: 0;
+}
+
+#topBtn:active
+{
+  background-color: var(--hoverCol);
+  color: black;
 }
