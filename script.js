@@ -26,3 +26,18 @@ function hideNav()
     fullNav.style.opacity = 0;
     fullNav.style.zIndex = -10000000;
 }
+
+const observer = new IntersectionObserver((entries) =>
+{
+    entries.forEach((entry) => {
+        if(entry.isIntersecting)
+        {
+            entry.target.classList.add('show')
+        }
+
+    });
+});
+
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
